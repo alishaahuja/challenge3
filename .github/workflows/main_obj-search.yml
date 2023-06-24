@@ -65,6 +65,7 @@ jobs:
           app-name: 'obj-search'
           slot-name: 'Production'
           package: ${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}
+          MANAGED_IDENTITY_ID: ${{ secrets.MANAGED_IDENTITY_ID }}
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_A56884DC8D624D918ED4F2F6D8F7B887 }}
           scm-do-build-during-deployment: true
           enable-oryx-build: true
