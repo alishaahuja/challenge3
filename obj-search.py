@@ -1,3 +1,9 @@
+import os
+
+managed_identity_id = os.environ.get('MANAGED_IDENTITY_ID')
+
+
+
 def get_value_from_nested_object(obj, key):
     keys = key.split('/')
     current_obj = obj
